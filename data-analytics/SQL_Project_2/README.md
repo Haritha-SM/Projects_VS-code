@@ -9,21 +9,22 @@ Analysis of customer behavior,retention, and lifetime value for an e-commerce co
 3. **Retention Analysis:** Which customers haven't purchased recently?
 
 ## Clean Up Data
-🖥️ **Query:** [0_create_view.sql](data-analytics/SQL_Project_2/2_Project_sql/0_create_view.sql)
+🖥️ **Query:** [0_create_view.sql](2_Project_sql/0_create_view.sql)
+
 - Aggregated sales and customer data into revenue metrics.
 - Calculated first purchase dates for cohort analysis.
 - Created view combining transactions and customer details.
 
 ## Analysis
 ### 1. Customer Segmentation
-🖥️ **Query:** [1_customer_segmentation.sql](data-analytics/SQL_Project_2/2_Project_sql/1_customer_segmentation.sql) 
+🖥️ **Query:** [1_customer_segmentation.sql](2_Project_sql/1_customer_segmentation.sql)
 - Categorized customers based on total lifetime value (LTV)
 - Assigned customers to High, Mid, and Low-value segments
 - Calculated key metrics like total revenue
 
 📈 **Visualization:**
 
-![Customer Segmentation](data-analytics/SQL_Project_2/Image/Customer_Segmentation.png)
+![Customer Segmentation](Image/Customer_Segmentation.png)
 
 📊 **Key Findings:**
 - High-Value segment (25% of customers) drives 66% of revenue ($135.4M).
@@ -36,7 +37,7 @@ Analysis of customer behavior,retention, and lifetime value for an e-commerce co
 - Low-Value (2% revenue): Design re-engagement campaigns and price-senstive promotions to increase purchase frequency.
 
 ### 2. Customer Revenue by Cohort
-🖥️ **Query:** [2_cohort_analysis.sql](data-analytics/SQL_Project_2/2_Project_sql/2_cohort_analysis.sql)
+🖥️ **Query:** [2_cohort_analysis.sql](2_Project_sql/2_cohort_analysis.sql)
 - Tracked revenue and customer count per cohorts.
 - Cohorts were grouped by year of first purchase.
 - Analyzed customer revenue at a cohort level.
@@ -47,11 +48,11 @@ Analysis of customer behavior,retention, and lifetime value for an e-commerce co
 
 Customer Revenue by Cohort (Adjusted for time in market) - First Purchase Date
 
-![Revenue by Cohort](data-analytics/SQL_Project_2/Image/Revenue_by_Cohort.png)
+![Revenue by Cohort](Image/Revenue_by_Cohort.png)
 
 Investigate Monthly Revenue & Customer Trands (3 Month Rolling Average)
 
-![Monthly revenue & Customer trend](data-analytics/SQL_Project_2/Image/Monthly_revenue_&_Customer_trend.png)
+![Monthly revenue & Customer trend](Image/Monthly_revenue_&_Customer_trend.png)
 
 📊 **Key Findings:**
 - Customer revenue is declining, older cohorts (2016-2018) spent ~$2,800+, while 2024 cohort spending dropped to ~$1,970.
@@ -64,14 +65,14 @@ Investigate Monthly Revenue & Customer Trands (3 Month Rolling Average)
 - Investigate cohort differences by applying successful strategies from high-spending cohorts (2016-2018) to newer ones.
 
 ### 3. Customer Retention
-🖥️ **Query:** [3_retention_analysis.sql](data-analytics/SQL_Project_2/2_Project_sql/3_retention_analysis.sql)
+🖥️ **Query:** [3_retention_analysis.sql](2_Project_sql/3_retention_analysis.sql)
 - Identified customers at risk of churning.
 - Analyzed last purchase patterns.
 - Calculated customer-specific metrics.
 
 📈 **Visualization:**
 
-![Customer retention](data-analytics/SQL_Project_2/Image/Customer_retention.png)
+![Customer retention](Image/Customer_retention.png)
 
 📊 **Key Findings:**
 - Cohort churn stabilizes at ~90% after 2-3 years, indicating a predictable long-term retention pattern.
